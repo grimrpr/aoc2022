@@ -10,7 +10,7 @@ use std::str::FromStr;
 pub fn print_answer() {
     println!(
         "{}",
-        read_calories(BufReader::new(File::open("../data/input_day1").unwrap())).unwrap()
+        read_calories(BufReader::new(File::open("data/input_day1").unwrap())).unwrap()
     );
 }
 
