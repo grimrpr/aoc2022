@@ -79,7 +79,8 @@ impl CargoStacks {
                 stack_src = &mut (stacks_second[mov_op.1 - split_idx]);
                 stack_dst = &mut (stacks_first[mov_op.2]);
             }
-            stack_dst.extend(stack_src.drain(range).rev());
+            //stack_dst.extend(stack_src.drain(range).rev()); // part1
+            stack_dst.extend(stack_src.drain(range)); // part2
         }
         Ok(())
     }
